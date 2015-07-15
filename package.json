@@ -1,0 +1,24 @@
+{
+  "name": "angular-gettext-loader",
+  "version": "1.0.0",
+  "description": "Webpack loader for angular-gettext",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/princed/angular-gettext-loader.git"
+  },
+  "keywords": [
+    "loader",
+    "webpack"
+  ],
+  "author": "Eugene Datsky <eugene@datsky.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/princed/angular-gettext-loader/issues"
+  },
+  "homepage": "https://github.com/princed/angular-gettext-loader#readme",
+  "dependencies": {
+    "angular-gettext-tools": "^2.1.2",
+    "loader-utils": "^0.2.10"
+  }
+}
