@@ -1,5 +1,6 @@
 # [angular-gettext](https://github.com/rubenv/angular-gettext)-loader
-Webpack loader for angular-gettext
+Webpack loader for angular-gettext. Intended to be used for compilation only. 
+Employ [angular-gettext-cli](https://github.com/huston007/angular-gettext-cli) together with [npm scripts](https://docs.npmjs.com/misc/scripts) for extraction.
 
 ### Parameters
 
