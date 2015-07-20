@@ -26,7 +26,7 @@ module.exports = {
         test: /basic.*\.po$/,
         loader: 'angular-gettext?module=myApp'
       },
-      // Bundle as json, to be injected with `gettextCatalog.setStrings()`. json-loader is required as well 
+      // Bundle as json, to be injected with gettextCatalog.setStrings(). json-loader is required as well 
       {
         test: /\.po$/,
         loader: 'json!angular-gettext?format=json'
