@@ -31,7 +31,7 @@ module.exports = {
         test: /\.po$/,
         loader: 'json!angular-gettext?format=json'
       },
-      // Copy as json, to be loaded gettextCatalog.loadRemote()  
+      // Copy as json, to be loaded with gettextCatalog.loadRemote()  
       {
         test: /additional.*\.po$/,
         loader: 'file?name=translations/[name].[hash].json!angular-gettext?format=json'
