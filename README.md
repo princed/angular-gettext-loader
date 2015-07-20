@@ -1,13 +1,12 @@
 # [angular-gettext](https://github.com/rubenv/angular-gettext)-loader
-Webpack loader for angular-gettext. Intended to be used for compilation only. 
-Employ [angular-gettext-cli](https://github.com/huston007/angular-gettext-cli) together with [npm scripts](https://docs.npmjs.com/misc/scripts) for extraction.
+Webpack loader for angular-gettext. Intended for compilation only.
+Use [angular-gettext-cli](https://github.com/huston007/angular-gettext-cli) together with [npm scripts](https://docs.npmjs.com/misc/scripts) for extraction.
+For details see official [developer guide](https://angular-gettext.rocketeer.be/dev-guide/) for angular-gettext.
 
 ### Parameters
 
-See official angular-gettext [developer guide](https://angular-gettext.rocketeer.be/dev-guide/) 
-
 #### format 
-Choices: `javascript`, `json`. Default value: `javascript`
+Values: `javascript`, `json`. Default value: `javascript`
 
 Compilation format, where `javascript` means Angular module. 
 
@@ -16,7 +15,7 @@ Type: `{string}`, default value: `gettext`
  
 Angular module name.  
 
-### Usage examples
+### Usage 
 
 ```js
 module.exports = {
