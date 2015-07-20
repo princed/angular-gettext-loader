@@ -7,6 +7,11 @@ module.exports = function (source) {
   var options = loaderUtils.parseQuery(this.query);
   var compiler = new Compiler(options);
 
+  // https://github.com/rubenv/grunt-angular-gettext/blob/master/tasks/compile.js#L7
+  if (options.format && !Compiler.hasFormat(options.format)) {
+    throw new Error('There is no "' + options.format + '" output format.');
+  }
+
   result = compiler.convertPo([source]);
   return result;
 };
