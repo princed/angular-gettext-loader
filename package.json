@@ -1,6 +1,6 @@
 {
   "name": "angular-gettext-loader",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Webpack loader for angular-gettext",
   "main": "index.js",
   "repository": {
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/princed/angular-gettext-loader#readme",
   "dependencies": {
-    "angular-gettext-tools": "^2.1.2",
-    "loader-utils": "^0.2.10"
+    "angular-gettext-tools": "^2.5.3",
+    "loader-utils": "^1.4.0"
   }
 }
