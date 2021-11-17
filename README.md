@@ -27,32 +27,32 @@ module.exports = {
         use: [{
           loader: 'angular-gettext-loader',
           options: {
-            module: "myApp"
+            module: 'myApp'
           }
         }]
       },
       // Bundle as json, to be injected with gettextCatalog.setStrings()
       {
         test: /\.po$/,
-        type: "asset/source",
+        type: 'asset/source',
         use: [{
           loader: 'angular-gettext-loader',
           options: {
-            format: "json"
+            format: 'json'
           }
         }]
       },
       // Copy as json, to be loaded with gettextCatalog.loadRemote()  
       {
         test: /additional.*\.po$/,
-        type: "asset/resource",
+        type: 'asset/resource',
         generator: {
-          filename: "translations/[name].[hash].json"
+          filename: 'translations/[name].[hash].json'
         },
         use: [{
           loader: 'angular-gettext-loader',
           options: {
-            format: "json"
+            format: 'json'
           }
         }]
       }
