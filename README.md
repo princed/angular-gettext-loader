@@ -24,17 +24,37 @@ module.exports = {
       // Bundle as angular module 
       {
         test: /basic.*\.po$/,
-        loader: 'angular-gettext?module=myApp'
+        use: [{
+          loader: 'angular-gettext-loader',
+          options: {
+            module: "myApp"
+          }
+        }]
       },
-      // Bundle as json, to be injected with gettextCatalog.setStrings(). json-loader is required as well 
+      // Bundle as json, to be injected with gettextCatalog.setStrings()
       {
         test: /\.po$/,
-        loader: 'json!angular-gettext?format=json'
+        type: "asset/source",
+        use: [{
+          loader: 'angular-gettext-loader',
+          options: {
+            format: "json"
+          }
+        }]
       },
       // Copy as json, to be loaded with gettextCatalog.loadRemote()  
       {
         test: /additional.*\.po$/,
-        loader: 'file?name=translations/[name].[hash].json!angular-gettext?format=json'
+        type: "asset/resource",
+        generator: {
+          filename: "translations/[name].[hash].json"
+        },
+        use: [{
+          loader: 'angular-gettext-loader',
+          options: {
+            format: "json"
+          }
+        }]
       }
     ]
   }

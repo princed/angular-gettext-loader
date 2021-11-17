@@ -4,7 +4,7 @@ var loaderUtils = require('loader-utils');
 module.exports = function (source) {
   this.cacheable();
 
-  var options = loaderUtils.parseQuery(this.query);
+  var options = loaderUtils.getOptions(this);
   var compiler = new Compiler(options);
 
   // https://github.com/rubenv/grunt-angular-gettext/blob/master/tasks/compile.js#L7
